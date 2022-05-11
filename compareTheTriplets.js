@@ -23,3 +23,18 @@ Finally, for elements 2, a[2] > b[2] so Alice receives a point.
 The return array is [1, 1] with Alice's score first and Bob's second.
 
 */
+
+function compareTriplets(a, b) {
+    let aTotal = 0;
+    let bTotal = 0;
+    
+    for(let i = 0; i < a.length; i++){
+        if(a[i] > b[i]){
+            aTotal++;
+        }
+        if(a[i] < b[i]){
+            bTotal++;
+        }
+    }
+    return[aTotal, bTotal];
+}
