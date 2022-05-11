@@ -1,3 +1,5 @@
+/*
+
 HackerLand University has the following grading policy:
 
 Every student receives a grade in the inclusive range from 0 to 100.
@@ -38,3 +40,16 @@ Sample Output
 67
 40
 33
+
+*/
+
+function gradingStudents(grades) {
+    const result = grades.map(grade => {
+                    let nextMultiple = (Math.trunc(grade/5) + 1) * 5;
+                    if(grade < 38 || (nextMultiple - grade) >= 3)
+                        return grade;
+                    else
+                        return nextMultiple;
+                })
+    return result;
+}
