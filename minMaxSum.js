@@ -49,10 +49,10 @@ function miniMaxSum(arr) {
     let sum = arr.reduce((acc, el) => acc + el, 0)
     
     for(let i = 0; i < arr.length; i++){
-        sum -= arr[i];
-        minSum = Math.min(minSum, sum);
-        maxSum = Math.max(maxSum, sum);
-        sum += arr[i];
+        // sum -= arr[i];
+        // minSum = Math.min(minSum, sum);
+        // maxSum = Math.max(maxSum, sum);
+        // sum += arr[i];
     }
     console.log(`${minSum} ${maxSum}`)
     return 
