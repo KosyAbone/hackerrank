@@ -54,6 +54,6 @@ function miniMaxSum(arr) {
         maxSum = Math.max(maxSum, sum);
         sum += arr[i];
     }
-    console.log(`${minSum} ${maxSum}`)
-    return 
-}
+//     console.log(`${minSum} ${maxSum}`)
+//     return 
+// }
